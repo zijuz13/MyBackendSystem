@@ -6,10 +6,6 @@ import java.util.Stack;
 public class LinkedMap<K,V> implements ILinkMap<K,V> {
     //头节点
     private Node<K,V> head;
-    public LinkedMap(){
-        //初始化链表，头节点为空
-        this.head=new Node<>(null,null);
-    }
     //内部类用来定义一个单向链表节点
     private class Node<K,V>{
         private K key;
